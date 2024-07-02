@@ -10,9 +10,9 @@ function showCartHandler(){
   setCartIsShown(true);
 }
 
-function hideCartHancler({
+function hideCartHancler(){
   setCartIsShown(false);
-})
+}
 
 
   return (
