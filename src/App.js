@@ -10,12 +10,15 @@ function showCartHandler(){
   setCartIsShown(true);
 }
 
+function hideCartHancler({
+  setCartIsShown(false);
+})
 
 
   return (
     <CartProvider>
-      {cartIsShown && <Cart />}
-      <Header onShowCart={showCartHandler()} />
+      {cartIsShown && <Cart onClose={hideCartHancler}/>}
+      <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
       </main>
