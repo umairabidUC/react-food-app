@@ -9,9 +9,7 @@ function showCartHandler(){
   setCartIsShown(true);
 }
 
-function hideCartHandler(){
-  setCartIsShown(false);
-}
+
 
   return (
     <CartProvider>
